@@ -1,0 +1,317 @@
+/**
+ * name: 默认主题
+ *
+ * 在下面定义html的内联样式
+ * section#markdown2wechatHtml 是生成的 html 最外层标签，可以定义一些全局基础样式
+ * 子元素有继承属性的，比如行高，可以在父级设置
+ */
+
+
+/* 基础排版 */
+section#markdown2wechatHtml  {
+  font-size: 16px;
+  color: black;
+  padding: 0 8px;
+  line-height: 1.75;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+/* 常用 */
+p {
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: #1e6bb8;
+  word-wrap: break-word;
+  border-bottom: 1px solid #1e6bb8;
+}
+
+hr {
+  height: 1px;
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+strong {
+  color: black;
+}
+
+em {
+  color: #bbb;
+}
+
+/* 标题 */
+h1 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  color: black;
+  font-size: 24px;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  color: #d84fa9;
+  font-size: 22px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  color: #1e6bb8;
+  font-size: 20px;
+}
+
+h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+}
+
+/* 列表 */
+ul {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  color: black;
+  list-style-type: disc;
+}
+
+ol {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  color: black;
+  list-style-type: decimal;
+}
+
+/* 列表内的 section 标签样式 */
+li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  text-align: left;
+  color: rgb(1,1,1);
+}
+
+/* 引用 */
+blockquote {
+  display: block;
+  font-size: 16px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border-left: 3px solid rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.05);
+  color: #6a737d;
+  padding: 10px 10px 10px 20px;
+  margin: 20px 0;
+}
+
+/* 引用区块内的段落 */
+blockquote p {
+  margin: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* 代码块容器 */
+pre {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* 代码块高亮样式 */
+pre code.hljs {
+  overflow-x: auto;
+  padding: 16px;
+  color: #383a42;
+  background: #fafafa;
+  display: -webkit-box;
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  border-radius: 0px;
+  font-size: 14px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 行内代码 */
+code {
+  font-size: 14px;
+  word-wrap: break-word;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 2px;
+  color: #1e6bb8;
+  background-color: rgba(27,31,35,.05);
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  word-break: break-all;
+}
+
+/* 表格 */
+section.table-container {
+  overflow-x: auto;
+}
+
+table {
+  display: table;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table th {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: left;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  min-width: 85px;
+}
+
+table td {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: left;
+  min-width: 85px;
+}
+
+table tbody {
+  border: 0;
+}
+
+table tbody tr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  background-color: white;
+}
+
+table tbody tr:nth-of-type(even) {
+   background-color: #F8F8F8;
+}
+
+/* 其它 */
+center img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100px;
+}
+
+
+/*
+代码高亮样式
+从这里复制一个 https://github.com/highlightjs/highlight.js/tree/main/src/styles
+
+Atom One Light by Daniel Gamage
+Original One Light Syntax theme from https://github.com/atom/one-light-syntax
+
+base:    #fafafa
+mono-1:  #383a42
+mono-2:  #686b77
+mono-3:  #a0a1a7
+hue-1:   #0184bb
+hue-2:   #4078f2
+hue-3:   #a626a4
+hue-4:   #50a14f
+hue-5:   #e45649
+hue-5-2: #c91243
+hue-6:   #986801
+hue-6-2: #c18401
+
+*/
+
+.hljs {
+  color: #383a42;
+  background: #fafafa;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #a0a1a7;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #a626a4;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e45649;
+}
+
+.hljs-literal {
+  color: #0184bb;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string {
+  color: #50a14f;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #986801;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #4078f2;
+}
+
+.hljs-built_in,
+.hljs-title.class_,
+.hljs-class .hljs-title {
+  color: #c18401;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
