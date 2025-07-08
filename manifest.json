@@ -6,6 +6,6 @@
   "description": "This plugin can convert the current Markdown document to WeChat rich text HTML in real time, preview on the right, and copy with one click. Custom theme styles are supported.",
   "author": "Haiqiao",
   "authorUrl": "https://github.com/imhaiqiao",
-  "isDesktopOnly": false,
+  "isDesktopOnly": true,
   "main": "main.js"
 } 
