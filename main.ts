@@ -151,7 +151,7 @@ class Markdown2WechatHtmlSettingTab extends PluginSettingTab {
         containerEl.empty();
         containerEl.createEl('h2', { text: 'Convert Markdown to Html Plugin Settings' });
         // 操作说明
-        containerEl.createEl('p', { text: 'This plugin can convert the current Markdown document to WeChat rich text HTML in real time, preview on the right, and copy with one click. Custom theme styles are supported.' });
+        containerEl.createEl('p', { text: 'Convert the current Markdown document to WeChat rich text HTML in real time, preview on the right, and copy with one click. Custom theme styles are supported.' });
         // 当前主题选择
         new Setting(containerEl)
             .setName('Current Theme')
