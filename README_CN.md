@@ -46,7 +46,7 @@
 如果你更喜欢手动安装插件：
 
 1. **下载最新版本**
-   - 前往 [GitHub Releases](https://github.com/imhaiqiao/convert-markdown-to-html/releases)
+   - 前往 [GitHub Releases](https://github.com/imhaiqiao/obsidian-convert-markdown-to-html-plugin/releases)
    - 下载最新版本的 zip 文件
 
 2. **解压并复制到 Obsidian 插件文件夹**

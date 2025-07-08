@@ -46,7 +46,7 @@ A powerful Obsidian plugin that converts your current Markdown document into WeC
 If you prefer to install the plugin manually:
 
 1. **Download the latest release**
-   - Go to [GitHub Releases](https://github.com/imhaiqiao/convert-markdown-to-html/releases)
+   - Go to [GitHub Releases](https://github.com/imhaiqiao/obsidian-convert-markdown-to-html-plugin/releases)
    - Download the latest release zip file
 
 2. **Extract and copy to Obsidian plugins folder**
